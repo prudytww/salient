@@ -1,0 +1,32 @@
+/*
+Theme Name:  Salient
+Version:     16.0.3
+Description: An Ultra Responsive Multi-Purpose Theme.
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+Author:      ThemeNectar
+Author URI:  https://themeforest.net/user/themenectar
+License:     Custom license
+License URI: http://themeforest.net/licenses/terms/regular
+Text Domain: salient
+*/
+
+/*-------------------------------------------------------------------------*/
+/* Note: The theme CSS files are loaded through the /css/ folder. 
+/*-------------------------------------------------------------------------*/
+
+
+:root {
+    --brand-green: #80b741;
+    --black: #000000;
+}
+
+.meta-tww-plus {
+    color: var(--brand-green);
+    font-weight: bold;
+    letter-spacing: -.25px;
+    font-style: italic;
+}
+
+.meta-tww-plus-sign {
+    color: var(--black);
+}
