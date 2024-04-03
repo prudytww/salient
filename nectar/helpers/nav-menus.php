@@ -154,7 +154,7 @@ if ( ! function_exists( 'nectar_walker_nav_menu' ) ) {
 				$theme_skin     = NectarThemeManager::$skin;
 				$header_format  = ( ! empty( $nectar_options['header_format'] ) ) ? $nectar_options['header_format'] : 'default';
 				$dropdownArrows = ( ! empty( $nectar_options['header-dropdown-arrows'] ) && $header_format != 'left-header' ) ? $nectar_options['header-dropdown-arrows'] : 'inherit';
-
+				$dropdownArrows = apply_filters('nectar_dropdown_arrows', $dropdownArrows, $element, $children_elements, $max_depth, $depth, $args, $output);
 				// Left header dropdown functionality.
 				$forced_arrows = false;
 				if( isset($nectar_options['left-header-dropdown-func']) && 'separate-dropdown-parent-link' === $nectar_options['left-header-dropdown-func']) {
